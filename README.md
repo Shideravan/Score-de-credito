@@ -32,11 +32,7 @@ Notemos que todas as dependências foram instaladas como _dev dependencies_ e o 
 
 Os _screenshots_ a seguir servem para ilustrar o _web app_ rodando num dispositivo móvel, com o sistema _Android_, utilizando o browser **Chrome mobile 91.0.4472.88**
 
-<img src="/exemplosTelas/0pontos.jpg" height="100px" title="0 pontos" tag="Screenshot aplicação para 0 Pontos">
-<img src="/exemplosTelas/30pontos.jpg" height="100px" title="30 pontos" tag="Screenshot aplicação para 30 Pontos">
-<img src="/exemplosTelas/60pontos.jpg" height="100px" title="60 pontos" tag="Screenshot aplicação para 60 Pontos">
-<img src="/exemplosTelas/90pontos.jpg" height="100px" title="90 pontos" tag="Screenshot aplicação para 90 Pontos">
-<img src="/exemplosTelas/0pontos.jpg" height="100px" title="100 pontos" tag="Screenshot aplicação para 100 Pontos">
+<img src="/exemplosTelas/0pontos.jpg" height="250px" title="0 pontos" tag="Screenshot aplicação para 0 Pontos"><img src="/exemplosTelas/30pontos.jpg" height="250px" title="30 pontos" tag="Screenshot aplicação para 30 Pontos"><img src="/exemplosTelas/60pontos.jpg" height="250px" title="60 pontos" tag="Screenshot aplicação para 60 Pontos"><img src="/exemplosTelas/90pontos.jpg" height="250px" title="90 pontos" tag="Screenshot aplicação para 90 Pontos"><img src="/exemplosTelas/0pontos.jpg" height="250px" title="100 pontos" tag="Screenshot aplicação para 100 Pontos">
 
 ## Estrutura
 
