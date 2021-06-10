@@ -59,7 +59,7 @@ Temos 4 variáveis que podemos setar conforme quisermos por ali:
 - Acompanhando esse padrão, a frase gerada embaixo do score na visualização principal e a barra ao redor da foto de perfil, também se transformam de acordo com o score, seguindo o mesmo padrão listado acima.
 - É mostrado a foto do usuário, o score e abaixo dele uma link "Saiba mais", que abre em nova guia com a página real de explicações sobre este score (https://www.serasa.com.br/score/o-que-e-score/) caso seja clicado. Também aparecem os cards de ofertas ao usuário. E as opções disponíveis de acordo com o score daquele usuário.
 
-### Árvore de arquivos
+## Árvore de arquivos
 
 De forma a modularizar o projeto, facilitando a manutenção e adição constante de novas features, optei por separar cada componente em um diretório próprio. Cada diretório possui seu arquivo _.jsx_ (código fonte do componente), seu teste associado (_.test.jsx_), uma folha de estilo expandida do SASS (usando o padrão de _style.scss_). Todos os componentes sempre carregam inicialmente a mesma folha de estilos de _reset_ (_reset.css_) que permite que as páginas sejam consistentes, independente do dispositivo ou browser utilizado para visualizar o projeto. Este arquivo se encontra na raíz do diretório _components_.
 
@@ -81,14 +81,14 @@ src
 
 Todos os caminhos foram pensados seguindo padrões modernos de manutenção de projetos no _framework_ **React**.
 
-### Testes automatizados
+## Testes automatizados
 
 Foram implementados diversos testes automatizados para verificar constantemente a estabilidade do sistema a cada atualização.
 Para implementação destes testes foi utilizada a **RTL - react testing Library**.
 Primeiramente, todos os componentes verificam se renderizam corretamente o conteúdo, através de um teste de render, em todos os componentes.
 Isso porque a maioria dos testes contidos neste projeto são testes unitários. Geralmente, costumo utilizar testes de integração também e testes e2e, estes geralmente utilizando o **Cypress**, mas resolvi que devido a escala inicial deste projeto, esse tipo de solução não agregaria tanto valor na solução final e poderia aumentar desnecessariamente a complexidade e entendimento do mesmo. Mas em projetos maiores e do "mundo real", esses tipos de testes são bastante recomendados.
 
-### Detalhes adicionais
+## Detalhes adicionais
 
 Mesmo se tratando de um teste, acho bastante relevante ter tomado todo o cuidado de apresentar essa solução o mais caprichada e profissional possível, dentro do tempo específicado.
 Acho importante num projeto, mesmo que simples, buscar sempre o profissionalismo e constantemente aprender durante esse processo. Certamente foi o caso neste trabalho.
