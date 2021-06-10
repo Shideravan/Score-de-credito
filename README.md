@@ -28,6 +28,16 @@ Para gerenciamento de pacotes e build de projeto, foi utilizado o **Yarn v1.22.1
 
 Notemos que todas as dependências foram instaladas como _dev dependencies_ e o _package.json_ contém as configurações com as dependências mais importantes.
 
+## Exemplos de telas de navegação
+
+Os _screenshots_ a seguir servem para ilustrar o _web app_ rodando num dispositivo móvel, com o sistema _Android_, utilizando o browser **Chrome mobile 91.0.4472.88**
+
+<img src="./exemploTelas/0pontos.jpg" title="0 pontos" tag="Screenshot aplicação para 0 Pontos">
+<img src="./exemploTelas/30pontos.jpg" title="30 pontos" tag="Screenshot aplicação para 30 Pontos">
+<img src="./exemploTelas/60pontos.jpg" title="60 pontos" tag="Screenshot aplicação para 60 Pontos">
+<img src="./exemploTelas/90pontos.jpg" title="90 pontos" tag="Screenshot aplicação para 90 Pontos">
+<img src="./exemploTelas/0pontos.jpg" title="100 pontos" tag="Screenshot aplicação para 100 Pontos">
+
 ## Estrutura
 
 ### Simulando o envio de dados por uma API
