@@ -22,7 +22,7 @@ Caso seja necessário, você talvez considere útil utilizar o comando `npm inst
 
 Para manter um padrão de gerenciamento de estados, cogitei a utilizar o **Redux-saga** (https://redux-saga.js.org/). Porém devido ao escopo do projeto achei que toda a funcionalidade disso poderia ser de forma mais fácil ser implementada e diminuindo a complexidade para ser avaliada. Hoje em dia, muitos problemas de _Prop drilling_ são resolvidos utilizando a própria _context API_ do React (https://pt-br.reactjs.org/docs/context.html). Pensando no pilar descrito de tornar o código o mais claro e simples, foi tomada a decisão de não utilizar neste primeiro momento o **Redux-saga**. Mas tenho a consciencia da viabilidade do uso dele em projetos maiores, principalmente para lidar melhor com alguns _side effects_. Note que numa expansão este recurso pode ser implementado no projeto de forma simples, já que o mesmo foi pensado em permitir esse tipo de expansão.
 
-Como linter, de forma a manter um padrão de codificação e evitar pequenos erros, foi utilizado o **ESlint** e para automatizar essa formatação, assegurandeo regras de estilo no design do código foi utilizado o **Prettier**.
+Como linter, de forma a manter um padrão de codificação e evitar pequenos erros, foi utilizado o **ESlint** e para automatizar essa formatação, assegurando regras de estilo no design do código foi utilizado o **Prettier**.
 
 Para gerenciamento de pacotes e build de projeto, foi utilizado o **Yarn v1.22.10** (https://yarnpkg.com/).
 
@@ -50,15 +50,14 @@ Temos 4 variáveis que podemos setar conforme quisermos por ali:
   - Caso sua pontuação esteja **acima de 90**, ele receberá um desconto (%) para obter o seu programa de proteção ao RG.
 - Estes itens, são mostrados em pequenos _cards_ que são ou não exibidos de acordo com seu score.
 - Algumas liberdades precisaram ser tomadas de forma a simular que o usuário ao clicar num _card_ de oferta de negociação de dívida, simulamos que esta negociação imediatamente aconteceu, pois normalmente esses dados viriam através de uma API externa. Dessa forma, foi decidido que ao clicar no _card_ de negociar a dívida, automaticamente e imediatamente o usuário já teria negociado. Claro que não seria assim num ambiente real, mas é uma ótima forma de simular esse comportamento. Sendo assim, ao clicar no _card_, a página real do serviço **Serasa Limpa Nome** (https://www.serasa.com.br/limpa-nome-online/) é aberta numa nova guia e 30 pontos de score são fornecidos automaticamente ao usuário. Com essa pontuação já notamos uma mudança na jornada do usuário no aplicativo, com novas telas e cores sendo mostradas.
-- Da mesma forma, ao clicar em solicitar crédito, a página do **Serasa eCred** (https://www.serasa.com.br/ecred/) é mostrada e ao clicar no programa de proteção ao RG, a página real do **Serasa Premium** é fornecida (https://www.serasa.com.br/premium/).
+- Da mesma forma, ao clicar em solicitar crédito, a página do **Serasa eCred** (https://www.serasa.com.br/ecred/) é mostrada e ao clicar no programa de proteção ao RG, a página real do **Serasa Premium** é fornecida (https://www.serasa.com.br/premium/). Sempre que o usuário clica num link de um serviço desses, é feita a simulação acrescentando 30 pontos (até o limite de 100, é claro) no _score_ do usuário.
 - De acordo com a situação financeira do usuário, não apenas as opções mudam, mas também toda a interface.
   - Abaixo de 30 pontos a interface tem um degradê baseado na cor laranja (#FF8C00)
   - Entre 31 e 60, a interface tem um degradê baseado na cor azul clara (#B0E0E6)
   - Entre 61 e 90, a interface tem um degradê baseado na cor verde água (#7FFFD4)
   - Acima de 90, a interface tem um degradê baseado na cor verde escuro (#008000)
 - Acompanhando esse padrão, a frase gerada embaixo do score na visualização principal e a barra ao redor da foto de perfil, também se transformam de acordo com o score, seguindo o mesmo padrão listado acima.
-- É mostrado a foto do usuário, o score (e abaixo dele uma seta com um menu retrátil "Veja mais", que chama o componente <VejaMais/> caso seja clicado) e as opções disponíveis de acordo com o score daquele usuário.
-- Nessa implementação, é possível votar ao menu principal e escolher outro usuário cadastrado.
+- É mostrado a foto do usuário, o score e abaixo dele uma link "Saiba mais", que abre em nova guia com a página real de explicações sobre este score (https://www.serasa.com.br/score/o-que-e-score/) caso seja clicado. Também aparecem os cards de ofertas ao usuário. E as opções disponíveis de acordo com o score daquele usuário.
 
 ### Árvore de arquivos
 
