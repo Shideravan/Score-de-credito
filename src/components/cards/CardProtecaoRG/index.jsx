@@ -7,7 +7,7 @@ import "./style.scss";
 const ofertaScore = (score) => {
   if (score > 90)
     return (
-      <p>
+      <p className="desconto">
         Aproveite a oferta exclusiva de 15% de desconto para pessoas com a sua
         pontuação!
       </p>
