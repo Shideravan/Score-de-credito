@@ -68,15 +68,13 @@ const UsuarioPagina = (props) => {
           <CardNegociar callback={incrementa} />
         </div>
       );
-    }
-    if (score > 30 && score <= 50) {
+    } else if (score > 30 && score <= 50) {
       return (
         <div className="card">
           <CardCredito callback={incrementa} />
         </div>
       );
-    }
-    if (score > 50) {
+    } else if (score > 50 && score <= 60) {
       return (
         <div>
           <div className="card">
@@ -88,6 +86,12 @@ const UsuarioPagina = (props) => {
           <div className="card">
             <CardProtecaoRG callback={incrementa} score={score} />
           </div>
+        </div>
+      );
+    } else if (score > 60) {
+      return (
+        <div className="card">
+          <CardProtecaoRG callback={incrementa} score={score} />
         </div>
       );
     }
