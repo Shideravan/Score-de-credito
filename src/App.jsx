@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./components/reset.css";
-import "./App.scss";
 import getUsuario from "./services/usuario";
 import UsuarioPagina from "./components/UsuarioPagina";
+import "./components/reset.css";
+import "./App.scss";
 
 const App = () => {
   const [foto, setFoto] = useState("");

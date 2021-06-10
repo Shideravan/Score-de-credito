@@ -1,4 +1,4 @@
-/* Este é um mock-up que simula a API para recebimento dos dados. Altere os dados de acordo com o que você deseja passar para o Web App
+/* Este é um mock-up que simula uma API para recebimento dos dados. Altere os dados de acordo com o que você deseja passar para o Web App
  * Além dos dados nome, foto e score (que deve estar no intervalo de 1 a 100), temos também a variável ok, que simula os dados terem sido corretamente recebidos ou não.
  *Valores para a variável ok:
  * true: Simula os dados sendo corretamente pegos.
