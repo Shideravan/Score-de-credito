@@ -1,0 +1,117 @@
+/* Lógica para colorizar o fundo da aplicação:
+  * Abaixo de 30 pontos a interface tem um degradê baseado na cor laranja (#FF8C00)
+  * Entre 31 e 60, a interface tem um degradê baseado na cor azul clara (#B0E0E6)
+  * Entre 61 e 90, a interface tem um degradê baseado na cor verde água (#7FFFD4)
+  * Acima de 90, a interface tem um degradê baseado na cor verde escuro (#008000)
+*/
+
+//Variáveis para as cores, representando a situação financeira, de acordo com o score:
+$baixo: #ff8c00;
+$medio: #b0e0e6;
+$alto: #7fffd4;
+$altissimo: #008000;
+
+
+.pagina-usuario {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  .foto-usuario {
+    border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+      -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); /* Firefox 3.5 - 3.6 */
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+  }
+  .baixo {
+    background-image: linear-gradient(180deg, $baixo, white);
+    
+    .foto-usuario {
+      border: 5px solid red;
+    }
+  }
+  
+  .medio {
+  
+    background-image: linear-gradient(180deg, $medio, white);
+    .foto-usuario {
+      border: 5px solid blue;
+    }
+  }
+  
+  .alto {
+
+    background-image: linear-gradient(180deg, $alto, white);
+    .foto-usuario {
+      border: 5px solid lightgreen;
+    }
+  }
+  
+  .altissimo {
+
+    background-image: linear-gradient(180deg, $altissimo, white);
+    .foto-usuario {
+      border: 5px solid darkgreen;
+    }
+  }
+}
+
+.nome-usuario {
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.card-pontuacao {
+  font-size: larger;
+  &__termometro {
+    background-image: linear-gradient(180deg, blue, red);
+  }
+
+  h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+}
+
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: center;
+  flex-direction: center;
+  height: relative;
+  width: 300px;
+
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+
+  // Configuração do hover
+  position: relative;
+  top: 3;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    top: -2px;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5); /* Firefox 3.5 - 3.6 */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.barracores{
+  background-color: #008000;
+}
