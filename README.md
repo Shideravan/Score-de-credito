@@ -13,7 +13,7 @@ Toda o projeto foi desenvolvido utilizando o **React 17.0.2** (https://reactjs.o
 A implementação da solução, foi pensada desde o início focando nos seguintes pilares: documentação, clareza de código (note que vários princípios do **Clean Code** foram utilizados neste projeto), integração aos testes e escalabilidade.
 É importante notar que devido ao projeto ser pensado de forma a ser totalmente modular, a inserção de novos componentes de forma a fornecer novas funcionalidades, é facilitada.
 
-Como plataforma de testes, resolvi utilizar o **RTL - React Testing Library**, pois devido ao fato de já ser nativamente integrado facilitaria a execução de testes em qualquer ambiente React. Maiores detalhes a respeito dos testes estão descritos na seção própria, logo abaixo.
+Como plataforma de testes, resolvi utilizar o **RTL - React Testing Library**, devido ao fato de já ser nativamente integrada ao _framework_ facilitando a execução dos testes em qualquer ambiente React. Maiores detalhes a respeito dos testes estão descritos em seção própria, logo abaixo.
 
 Para pré-processamento do CSS, foi utilizado o **SASS** (https://sass-lang.com/). Note que cada componente criado, possui um arquivo do SASS (scss) correspondente, no lugar de um .css comum. Deixei tudo devidamente modularizado para facilitar a manutenção. Note em cada componente, antes de se carregar a folha de estilos correspondente, primeiro carrega o arquivo _reset.css_ que está na raíz do diretório _components_. Ele serve para remover os padrões de cada browser a fim de ter uma experiência mais padronizada independente do browser ou do dispositivo utilizado. A partir disso, toda a estilização fica a cargo somente da folha de estilos expandida _style.scss_ correspondente a cada componente.
 

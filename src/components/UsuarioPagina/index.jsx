@@ -23,6 +23,8 @@ const mensagemScore = (score) => {
   }
 };
 
+/* A função corFundo altera o nome da div responsável por abrigar a aplicação.
+ * Esse valor é tratado dentro do arquivo .scss fornecendo temas de fundo de acordo com a situação financeira do usuário. */
 const corFundo = (score) => {
   if (score <= 30) return "baixo";
   else if (score <= 60) return "medio";
@@ -30,7 +32,7 @@ const corFundo = (score) => {
   else return "altissimo";
 };
 
-// O componente UsuárioPagina é responsável pela exibição da tela do usuário.
+// O componente UsuárioPagina é responsável pela exibição da tela do usuário. É a view principal da aplicação.
 const UsuarioPagina = (props) => {
   useEffect(() => {
     setScore(props.score);
@@ -42,7 +44,9 @@ const UsuarioPagina = (props) => {
    * Ao clicar no botão, é aumentado em 30 o valor do Score do usuário e o site do serviço correspondente real no site do Serasa será aberto em uma nova guia.
    * Está sendo usando o useCallback para se evitar chamadas desnecessárias */
   const incrementa = useCallback(() => {
-    setScore(score + 30);
+    // É feita uma verificação antes de incrementar o valor de forma a assegurar que o valor permaneça no intervalo de 0-100 antes de fazer a soma de pontos após interação.
+    if (score + 30 <= 100) setScore(score + 30);
+    else setScore(100);
   }, [score]);
   let nomeClasse = corFundo(score);
 

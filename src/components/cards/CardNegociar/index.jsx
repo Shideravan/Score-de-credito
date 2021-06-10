@@ -2,6 +2,9 @@ import React from "react";
 import "../../reset.css";
 import "./style.scss";
 
+/* O componente CardNegociar é responsável pelo card qwue será apresentado oferecendo uma oferta negociação de dívidas quando o usuário possuir score adequado para isso.
+/* Clicar no link faz com que o usuário tenha um aumento de pontos em seu score e seja levado numa nova guia para o serviço real Serasa LimpaNome. */
+
 const CardNegociar = (props) => {
   const callback = props.callback;
   return (

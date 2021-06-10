@@ -2,6 +2,9 @@ import React from "react";
 import "../../reset.css";
 import "./style.scss";
 
+/* O componente CardCredito é responsável pelo card que será apresentado oferecendo uma oferta de crédito quando o usuário possuir score adequado para isso.
+/* Clicar no link faz com que o usuário tenha um aumento de pontos em seu score e seja levado numa nova guia para o serviço real Serasa eCred. */
+
 const CardCredito = (props) => {
   const callback = props.callback;
 

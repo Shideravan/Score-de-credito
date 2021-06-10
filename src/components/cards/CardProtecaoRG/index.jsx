@@ -4,7 +4,6 @@ import "./style.scss";
 
 // Se o score estiver entre 61-90, oferecer a oferta de forma padrão.
 // Se o score estiver acima de 90, mostra também que possui 15% de desconto no serviço.
-
 const ofertaScore = (score) => {
   if (score > 90)
     return (
@@ -15,6 +14,9 @@ const ofertaScore = (score) => {
     );
 };
 
+/* O componente CardProtecaoRG é responsável pelo card que será apresentado oferecendo uma oferta de proteção aos dados quando o usuário possuir score adequado para isso.
+/* Clicar no link faz com que o usuário tenha um aumento de pontos em seu score e seja levado numa nova guia para o serviço real Serasa Premium. 
+/* Se o usuário possuir score > 90, é ainda oferecido 15% de desconto no serviço, que é simulado mostrando a frase correspondente no card. */
 const CardProtecaoRG = (props) => {
   const callback = props.callback;
 
