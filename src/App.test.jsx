@@ -1,9 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-describe('App', () => {
-  it('renders without crashing', () =>{
-    render(<App/>)
-  })
+describe("App", () => {
+  it("Renderiza a página sem crashar", () => {
+    render(<App />);
+  });
 });
-
