@@ -7,7 +7,7 @@
 const foto =
   "https://st.depositphotos.com/1071112/1214/i/450/depositphotos_12146650-stock-photo-the-square-image-of-a.jpg";
 const nome = "Anabele Vitória de Souza";
-const score = 0;
+const score = 1;
 const ok = true;
 
 const getUsuario = () => {

@@ -10,7 +10,7 @@ Gostaria de antes de mais nada apresentar a partir deste **readme** uma visão g
 
 Toda o projeto foi desenvolvido utilizando o **React 17.0.2** (https://reactjs.org/). Esta era a versão mais recente da biblioteca disponível durante o desenvolvimento deste projeto, portanto é recomendado que esta versão seja utilizada.
 
-A implementação da solução, foi pensada desde o início focando nos seguintes pilares: documentação, clareza de código (note que vários princípios do **Clean Code** foram utilizados neste projeto), integração aos testes e escalabilidade.
+A implementação da solução foi pensada desde o início focando nos seguintes pilares: documentação, clareza de código (note que vários princípios do **Clean Code** foram utilizados neste projeto), integração aos testes e escalabilidade.
 É importante notar que devido ao projeto ser pensado de forma a ser totalmente modular, a inserção de novos componentes de forma a fornecer novas funcionalidades, é facilitada.
 
 Como plataforma de testes, resolvi utilizar o **RTL - React Testing Library**, devido ao fato de já ser nativamente integrada ao _framework_ facilitando a execução dos testes em qualquer ambiente React. Maiores detalhes a respeito dos testes estão descritos em seção própria, logo abaixo.
@@ -38,7 +38,7 @@ Os _screenshots_ a seguir servem para ilustrar o _web app_ rodando num dispositi
 
 ### Simulando o envio de dados por uma API
 
-O componente _services/usuario.js_ foi desenvolvido de forma a simular uma API que enviaria estes dados para o Web App. Temos tanto o envio das variáveis como uma simulação de erro desenvolvida na estutura deste componente.
+O componente _services/usuario.js_ foi desenvolvido de forma a simular uma API que enviaria estes dados para o _Web App_. Temos tanto o envio das variáveis como uma simulação de erro desenvolvida na estutura deste componente.
 Temos 4 variáveis que podemos setar conforme quisermos por ali:
 
 - foto: É uma variável tipo _String_ onde você pode colocar um endereço _web_ que represente uma foto em um padrão de imagens válido.
@@ -48,7 +48,7 @@ Temos 4 variáveis que podemos setar conforme quisermos por ali:
 
 ### Interface de usuário e serviços (view)
 
-- Foi tomado o cuidado desta e de todas as interfaces serem _mobile friendly_, já que mais de 80% dos usuários acessa através de um dispositivo móvel.
+- Foi tomado o cuidado desta e de todas as interfaces serem _mobile friendly_, já que mais de 80% dos usuários acessam através de um dispositivo móvel.
 - É mostrada a interface que será mostrada para aquele usuário, de acordo com as características de seu perfil, conforme segue:
   - Caso a pontuação esteja **abaixo de 30**, ele recebe ofertas para negociar suas dívidas;
   - Caso sua pontuação esteja entre **31 e 60**, ele está elegível para solicitar crédito, podendo escolher uma das proposta oferecidas;
@@ -90,9 +90,12 @@ Todos os caminhos foram pensados seguindo padrões modernos de manutenção de p
 ## Testes automatizados
 
 Foram implementados diversos testes automatizados para verificar constantemente a estabilidade do sistema a cada atualização.
-Para implementação destes testes foi utilizada a **RTL - react testing Library**.
+Para implementação destes testes foi utilizada a **RTL - React Testing Library**.
 Primeiramente, todos os componentes verificam se renderizam corretamente o conteúdo, através de um teste de render, em todos os componentes.
-Isso porque a maioria dos testes contidos neste projeto são testes unitários. Geralmente, costumo utilizar testes de integração também e testes e2e, estes geralmente utilizando o **Cypress**, mas resolvi que devido a escala inicial deste projeto, esse tipo de solução não agregaria tanto valor na solução final e poderia aumentar desnecessariamente a complexidade e entendimento do mesmo. Mas em projetos maiores e do "mundo real", esses tipos de testes são bastante recomendados.
+Também implementei testes simples para verificar se o conteúdo esperado está devidamente sendo apresentado na view da aplicação.
+São testes simples, mas essenciais de serem feitos, garantindo que estes comportamentos continuem funcionando adequadamente, mesmo com novos updates no código.
+Obviamente num projeto maior e do "mundo real", implementaria mais testes e mais variados, mas para pelo menos garantir essas características mais básicas, os testes implementados já devam ser suficientes.
+Perceba também, que a maioria dos testes contidos neste projeto são testes unitários. Geralmente, costumo utilizar testes de integração também e testes e2e, estes geralmente utilizando o **Cypress**, mas resolvi que devido a escala inicial deste projeto, esse tipo de solução não agregaria tanto valor na solução final e poderia aumentar desnecessariamente a complexidade e entendimento do mesmo. Mas em projetos maiores e do "mundo real", esses tipos de testes são bastante recomendados.
 
 ## Detalhes adicionais
 
