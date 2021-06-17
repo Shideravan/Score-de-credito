@@ -1,10 +1,10 @@
-## Solução para o Teste de Frontend Developer do Serasa S/A
+## Solução para o Teste de Frontend Developer
 
 ### Autor: José Marcio Rezende Franco
 
 ## Visão geral do projeto
 
-Seja bem-vindo ao repositório do projeto do meu teste de _frontend developer_ para a **Serasa S/A**.
+Seja bem-vindo ao repositório do projeto do meu teste de _frontend developer_.
 
 Gostaria de antes de mais nada apresentar a partir deste **readme** uma visão geral do projeto. Note que foi tomado o cuidado de manter comentários no código de forma a facilitar a leitura, então a documentação do mesmo não se resume a esta parte, mas apenas se inicia. Eu preferi utilizar o português como idioma padrão para a documentação e nomes de variáveis, funções, classes e componentes, mas provavelmente num projeto real eu teria utilizado a língua inglesa, de forma a manter uma padronização.
 
